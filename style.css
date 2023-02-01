@@ -1,4 +1,4 @@
-*{
+body{
     margin: 0;
     padding: 0;
 }
@@ -8,27 +8,11 @@ html, body, html * {
   font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    --abl-line-height: $line-height-m;
-    --abl-desktop-breakpoint: 1024;
-    font-weight: normal;
-    background-color: #0b0a0a8d;
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
-
-.body-text h1, .body-text h2 {
-    font-size: 1.875rem;
-    line-height: 1.4;
-    text-rendering: optimizeLegibility;
-    -webkit-font-variant-ligatures: common-ligatures;
-    font-variant-ligatures: common-ligatures;
-    -webkit-font-feature-settings: "kern";
-    font-feature-settings: "kern";
-    font-kerning: normal;
-}
 :root{
     --yellow: #f2c21e;
     --green : #109a73;
@@ -156,12 +140,6 @@ a{
 .navbar-nav li a:hover, .navbar-nav li a:active {
     color: #f2c21e !important;
 }  
-
-.slide3 {
-    position: absolute;
-    width: 1440px;
-    margin-top: -22%;
-  }
 
 .slide-titletext3{
     color: white;
@@ -303,40 +281,36 @@ top: 90%;
     padding-left: 10%;
 }
 
-.slide3_orange{
+.slide-3 {
+    position: relative;
+}
+
+.slide-3 span{
     color: var(--orange);
-    position: absolute ;
-    font-weight: 550;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    top: 355vh;
-    right: 16%;
 }
 
-.slide3_white{
-    color: white;
+.slide-3_text{
+    color: rgba(255, 255, 255, 0.700);
     position: absolute ;
-    font-weight: 550;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    top: 35%;
     right: 12%;
-    top: 365vh;    
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
 }
 
-.slide3_orange_h2{
+.slide-3_text-2{
     color: var(--orange);
     font-family: 'Montserrat', sans-serif;
     font-weight: 450;
     font-size: 35px;
     position: absolute ;
-    right: 22%;
-    top: 410vh; 
+    right: 12%;
+    top: 82%; 
 }
 
-.slide3_p{
+.slide-3_text-3{
     color: white;
     font-family: Montserrat;
-    font-size: 18px;
-    margin-left: 23%;
-    margin-top: -15%;
+    font-size: 16px;
 }
