@@ -94,6 +94,20 @@ a{
     font-size: 50px;
 }
 
+.slide-1 button{
+    border-radius: 25px;
+}
+
+.slide-1 a {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+.slide a:hover{
+    color: white;
+}
 
 .slide-titletext{
     color: white;
@@ -209,7 +223,7 @@ a{
 }
 
 .slide-2{
-    position: absolute;
+    position: relative;
 }
 
 .redtext{
@@ -254,4 +268,37 @@ top: 90%;
     top: 78%;
     right: 0%;
     height: 30px;
+}
+
+.slide-4{
+    position: relative;
+}
+
+.slide-4_white{
+    color: white;
+    font-size: 63px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    position: absolute;
+    left: 5%;
+}
+
+.slide-4_yellow{
+    color: var(--yellow);
+    font-weight: 500;
+    font-family: Montserrat;
+    position: absolute;
+    top: 20%;
+    right: 9%;
+    font-size: 35px;
+}
+
+.slide-4 p{
+    color: white;
+    position: absolute;
+    top: 84%;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding-left: 10%;
 }
