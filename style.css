@@ -302,3 +302,41 @@ top: 90%;
     font-size: 18px;
     padding-left: 10%;
 }
+
+.slide3_orange{
+    color: var(--orange);
+    position: absolute ;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    top: 355vh;
+    right: 16%;
+}
+
+.slide3_white{
+    color: white;
+    position: absolute ;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    right: 12%;
+    top: 365vh;    
+}
+
+.slide3_orange_h2{
+    color: var(--orange);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 35px;
+    position: absolute ;
+    right: 22%;
+    top: 410vh; 
+}
+
+.slide3_p{
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    margin-left: 23%;
+    margin-top: -15%;
+}
