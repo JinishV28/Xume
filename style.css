@@ -350,3 +350,48 @@ top: 90%;
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.697); 
   }
+
+.footer_col2 {
+    right: -7%;
+    position: absolute;
+    top: -33vh;
+  }
+
+ .founder {
+    position: absolute;
+    left: -3%;
+    top: 18vh;
+  }
+.footer_col1{
+        rotate: 90deg;
+        position: absolute;
+        left: 66%;
+        bottom: -10vh;
+}
+
+.founder_info{
+        position: absolute;
+        color: white;
+        left: 55%;
+        top: 37%;
+}
+
+.address{
+    color: var(--yellow);
+}
+
+.mobile{
+    color: var(--yellow);
+}
+
+.footer_info{
+    color: white;
+    position: relative;
+    top: 15vh;
+    margin-left: 5%;
+}
+
+.vl {
+    border-left: 3px white;
+    height: 500px;
+  }
