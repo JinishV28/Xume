@@ -21,12 +21,6 @@ html, body, html * {
     --red:#e24227;
 }
 
-.nav_1{
-    padding: 1%;
-    margin-left: 6% ;
-    border-bottom-color: 1px solid grey;
-    border-bottom: 3px solid rgba(255,255,255,.25);
-}
 .bi{
     position: absolute;
     width: 40px;
@@ -52,72 +46,85 @@ a{
     top: 48%;
 }
 
-.heading_1 {
-
-    position: absolute;
-    top: 140px;
-    left: 33%;
-}
-
 .slide-1{
-    background-color: #000;
     z-index: 0;
 }
 
-.slide1-text{
-    position: absolute;
-    top: 10%;
+.slide-1 .col-8{
+    padding: 0 0 !important;
+}
+
+.slide-1 .col-4{
+    margin-top: 5%;
+    padding: 0 0 !important;
 }
 
 .yellowtext{
-    position: relative;
-    right: 15%;
     color: var(--yellow);
-    font-weight: 550;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
 }
 
-.slide-1 button{
-    border-radius: 25px;
+.slide1-text {
+    font-size: 16px;
 }
 
-.slide-1 a {
+.slide-1 .download-btn{
+    border-radius: 25px;
+    font-weight: bold;
+    color: #1a1323;
+    background-color: aqua;
+    padding: 2%;
+}
+
+.slide-1 .download-btn:hover{
+    background-color: rgb(240, 190, 253);
+}
+
+.slide-1 .download-opts{
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
+    margin-top: 1.5%;
+    padding: 2%;
+    border-radius: 50px;
     text-decoration: none;
     margin-left: 5%;
 }
 
-.slide a:hover{
-    color: white;
+.slide .download-opts:hover{
+    color: rgb(240, 190, 253);
+    box-shadow: 0px 0px 5px 5px lightgoldenrodyellow;
 }
 
 .slide-titletext{
     color: white;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: 900;
     text-transform: uppercase;
-    font-family:Montserrat;
+    font-family:'Montserrat';
      text-align: center;
 }
 
 .slide2-titletext{
     color: rgba(245, 245, 245, 0.685);
     font-size: 65px;
-    font-weight: bolder;
+    font-weight: 900;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     text-align: left;
     position: absolute;
     top: 15%;
     left: 4%;
 }
 
+.container{
+    border-bottom: 1px solid white;
+}
+
 .nav {
   background: #000;
   height: 80px; /* set same as height & line-height below */
-  border-bottom: 1px solid white;
   z-index: 2;
 }
 
@@ -139,16 +146,6 @@ a{
 
 .navbar-nav li a:hover, .navbar-nav li a:active {
     color: #f2c21e !important;
-}  
-
-.slide-titletext3{
-    color: white;
-    font-size: 63px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: Montserrat;
-    text-align: left;
-    padding-left: 65%;
 }
 
 .slide-text_red{
@@ -190,6 +187,7 @@ a{
 .right_wave{
     position: absolute;
     height: 450px;
+    right: 0%;
     width: auto;
 }
 
@@ -208,18 +206,18 @@ a{
     position: absolute;
     top: 60%;
     left: 3%;
-color: #f16e26;
-font-size: 34px;
-font-weight: bold;
-font-family: Montserrat;
-text-align: left;
+    color: #f16e26;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
 }
 
 .slide2-text{
 color: white;
-font-family: montserrat;
+font-family: 'Montserrat',sans-serif;
 padding-left: 4%;
-font-size: medium;
+font-size: 16px;
 position: absolute;
 top: 90%;
 }
@@ -260,25 +258,25 @@ top: 90%;
     color: rgba(255, 255, 255, 0.700);
     position: absolute ;
     top: 35%;
-    right: 12%;
+    right: 3%;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-family: 'Montserrat';
+    font-size: 65px;
 }
 
 .slide-3_text-2{
     color: var(--orange);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 450;
+    font-weight: 500;
     font-size: 35px;
     position: absolute ;
-    right: 12%;
-    top: 82%; 
+    right: 7%;
+    top: 78%; 
 }
 
 .slide-3_text-3{
     color: white;
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     font-size: 16px;
 }
 
@@ -288,10 +286,10 @@ top: 90%;
 
 .slide-4_white{
     color: white;
-    font-size: 63px;
-    font-weight: bolder;
+    font-size: 65px;
+    font-weight: 900;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     position: absolute;
     left: 5%;
 }
@@ -299,7 +297,7 @@ top: 90%;
 .slide-4_yellow{
     color: var(--yellow);
     font-weight: 500;
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     position: absolute;
     top: 20%;
     right: 9%;
@@ -310,8 +308,8 @@ top: 90%;
     color: white;
     position: absolute;
     top: 84%;
-    font-family: Montserrat;
-    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
     padding-left: 10%;
 }
 
@@ -321,15 +319,31 @@ top: 90%;
 
 .slide-6 .comment-slider{
     overflow-x: hidden;
-    height: 500px;
+    height: 600px;
 }
 
-.slide-6 .comment-slider img{
+.slide-6 .img-1, .img-2 {
     height: 180px;
 }
 
+.slide-6 .img-3,.img-4,.img-5{
+    height: 250px;
+}
+
+.slide-6 .comment-slider h2{
+    color: #f2c21e;
+}
+
+.slide-6_text{
+    color: rgba(255, 255, 255, 0.700);
+    text-align: right;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+}
+
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 13px;
   }
   
   /* Track */
@@ -348,7 +362,52 @@ top: 90%;
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.697); 
+    background: rgba(255, 255, 255, 0.7); 
+  }
+
+.footer_col2 {
+    right: -7%;
+    position: absolute;
+    top: -33vh;
+  }
+
+ .founder {
+    position: absolute;
+    left: -3%;
+    top: 18vh;
+  }
+.footer_col1{
+        rotate: 90deg;
+        position: absolute;
+        left: 66%;
+        bottom: -10vh;
+}
+
+.founder_info{
+        position: absolute;
+        color: white;
+        left: 55%;
+        top: 37%;
+}
+
+.address{
+    color: var(--yellow);
+}
+
+.mobile{
+    color: var(--yellow);
+}
+
+.footer_info{
+    color: white;
+    position: relative;
+    top: 15vh;
+    margin-left: 5%;
+}
+
+.vl {
+    border-left: 3px white;
+    height: 500px;
   }
 
 .footer_col2 {
