@@ -367,7 +367,7 @@ html, body, html * {
     }
 
     .footer-img{
-        height: 120px;
+        height: 70px;
     }
     
     .footer-text{
@@ -671,12 +671,12 @@ html, body, html * {
     }
 
     .footer-img{
-        height: 60px;
+        height: 40px;
     }
     
     .footer-text{
         color: white;
-        font-size: small;
+        font-size: 11px;
         text-decoration: underline;
     }
 
@@ -772,7 +772,7 @@ html, body, html * {
         }
 
         .footer-img{
-            height: 80px;
+            height: 60px;
         }
 
         .footer-text{
@@ -815,7 +815,7 @@ html, body, html * {
         }
 
         .footer-img{
-            height: 100px;
+            height: 65px;
         }
 
         .footer-text{
