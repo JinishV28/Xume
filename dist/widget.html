@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XUME | Widget</title>
+        <link rel="shortcut icon" href="/assets/logo2.png">
+        <link rel="stylesheet" href="widget.css">
+        <!--Bootstrap-->
+        <link
+           href='https://fonts.googleapis.com/css?family=Montserrat:400,100,100italic,300,400italic,500,500italic,700,700italic,900italic,900'
+           rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+           integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+           crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+           integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+           crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+           crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        <path fill-rule="evenodd"
+           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        <!-- Fonts -->
+        <link rel="preload"
+           href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.2dadbb3c03c1.woff2"
+           as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload"
+           href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.f859db99cda9.woff2"
+           as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload"
+           href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.b650e9c2aaf6.woff2"
+           as="font" type="font/woff2" crossorigin="anonymous">
+    </head>
+
+    <body style="overflow-x: hidden;">
+        <div id="widgetModal" class="modal fade" data-backdrop="false" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-2 ml-auto">
+                                <button type="button" class="close" id="crossButton1" data-dismiss="modal">
+                                    &times;
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row row-content justify-content-center">
+                            <div class="col-12 col-sm-10 col-md-7" style="text-align: center;">
+                                <input type="text" placeholder="Search.."><button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="row row-content justify-content-center">
+                            <div class="col-3">
+                                <img src="/assets/XUME-LOGO.png" width="100%" alt="">
+                            </div>
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                    <div class="widget-title mb-3">
+                                        New-age consuming starts <br> with one search
+                                    </div>
+                                    <br>
+                                    <div class="widget-subtitle">
+                                        No more falling prey to marketing gimmicks. Know what's in the <br> package before you buy it with the Xume app.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-sm btn-warning" id="widgetBtn" data-toggle="modal" data-target="#widgetModal"><img src="/assets/logo2.png" height="30px" alt=""> <strong>CONXUME</strong></button>
+    </body>
+</html>
