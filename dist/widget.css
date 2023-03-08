@@ -4,7 +4,7 @@
 }
 
 .row-content{
-    margin: 40px 0px;
+    margin: 30px 0px;
 }
 
 .modal-lg{
@@ -22,9 +22,13 @@
     border-radius: 1rem;
 }
 
-.section-1, .section-2{
+.section-1,.section-2{
   max-height: 450px;
   overflow-x: hidden;
+}
+
+.rounded{
+  border-radius: 25px !important;
 }
 
 .close{
@@ -39,22 +43,27 @@ input[type=text]{
     background-color: #20172b;
 }
 
+input[type="text"]::placeholder {
+  padding-left: 5%;
+}
+
 #searchBar{
-    padding: 0.5% 0%;
+    padding: 0.4% 0%;
+    width: 90%;
 }
 
 .searchButton{
     background-color: #109a73;
     color: white;
     border-color: white;
-    padding: 0.5% 2%;
+    padding: 0.4% 2%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
 .widget-title{
         color: white;
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-weight: 900;
         font-family:'Montserrat';
         text-align: center;
@@ -63,7 +72,7 @@ input[type=text]{
 .widget-subtitle{
     color: #f2c21e;
     font-family: 'Montserrat';
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: center;
 }
 
@@ -116,6 +125,7 @@ input[type=text]{
     background-color: transparent;
     border: 1px solid white !important;
     color: white;
+    width: 160px;
   }
 
   .ingredient-analysis-btn :hover, .quick-facts-btn :hover{
@@ -142,16 +152,23 @@ input[type=text]{
 
   .product-btn, .categories-btn{
     background-color: transparent;
-    border: 1px solid white !important;
+    font-size: small !important;
+    font-weight: 100 !important;
+    border: 1.5px solid white !important;
+    width: 120px;
+    height: 30px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     color: white;
   }
 
-  .product-btn{
+  .categories-btn{
     border-top-left-radius: 25px !important;
     border-bottom-left-radius: 25px !important;
   }
 
-  .categories-btn{
+  .product-btn{
     border-top-right-radius: 25px !important;
     border-bottom-right-radius: 25px !important;
   }
@@ -161,6 +178,15 @@ input[type=text]{
     border-radius: 5rem;
     width: 100px;
     height: 35px;
+  }
+
+  .product-action-btns2 .btn{
+    border-radius: 5rem;
+    width: 45%;
+    height: 28px;
+    font-size: 12px;
+    align-items: center;
+    font-weight: bold;
   }
 
   .view-btn{
@@ -206,6 +232,7 @@ input[type=text]{
     overflow-x: hidden;
   }
 
-  .rounded {
-    border-radius: 250px !important
-}
+  /* .card{
+    height: 60%;
+  } */
+
