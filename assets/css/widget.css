@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Digital-7';
-    src: url("/assets/digital-7.regular.ttf");
+    src: url("../digital-7.regular.ttf");
 }
 
 .row-content{
@@ -14,7 +14,7 @@
 
 .modal-content{
     border: none !important;
-    background-image: url('/Bigbasket/BACKGROUND\ \(1\).png') !important;
+    background-image: url('../../Bigbasket/BACKGROUND\ \(1\).png') !important;
     background-size: cover;
 }
 
