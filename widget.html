@@ -59,11 +59,9 @@
               <div class="row mb-4">
                 <div class="col-12">
                   <div class="row justify-content-center">
-                    <div class="col-3 mb-4">
-                      <div class="btn-group" role="group">
-                        <button type="button" onclick="categoryFunction()" class="categories-btn btn">Category</button>
-                        <button type="button" onclick="productFunction()" class="product-btn btn">Product</button>
-                      </div>
+                    <div class="btn-group" role="group">
+                      <button type="button" class="categories-btn btn" onclick="categoryFunction()">Category</button>
+                      <button type="button" class="product-btn btn" onclick="productFunction()">Product</button>
                     </div>
                   </div>
                 </div>
@@ -115,15 +113,17 @@
                             <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
                           </div>
                           <div class="col-7 mt-2"  style="padding: 0%;">
-                            <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
+                            <img src="./Bigbasket/61.png" height="85%" width="85%" alt="">
                           </div>
                         </div>
                         <div class="col-12 mt-2" style="padding: 0%;">
                           <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
                         </div>
                         <div class="product-action-btns2 row mt-4 justify-content-center">
-                          <div class="col-12">
+                          <div class="view-col col-6">
                             <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                          </div>
+                          <div class="buy-col col-6">
                             <button class="btn buy-btn">Buy</button>
                           </div>
                         </div>
@@ -139,15 +139,17 @@
                             <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
                           </div>
                           <div class="col-7 mt-2"  style="padding: 0%;">
-                            <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
+                            <img src="./Bigbasket/61.png" height="85%" width="85%" alt="">
                           </div>
                         </div>
                         <div class="col-12 mt-2" style="padding: 0%;">
                           <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
                         </div>
                         <div class="product-action-btns2 row mt-4 justify-content-center">
-                          <div class="col-12">
+                          <div class="view-col col-6">
                             <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                          </div>
+                          <div class="buy-col col-6">
                             <button class="btn buy-btn">Buy</button>
                           </div>
                         </div>
@@ -163,15 +165,17 @@
                             <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
                           </div>
                           <div class="col-7 mt-2"  style="padding: 0%;">
-                            <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
+                            <img src="./Bigbasket/61.png" height="85%" width="85%" alt="">
                           </div>
                         </div>
                         <div class="col-12 mt-2" style="padding: 0%;">
                           <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
                         </div>
                         <div class="product-action-btns2 row mt-4 justify-content-center">
-                          <div class="col-12">
+                          <div class="view-col col-6">
                             <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                          </div>
+                          <div class="buy-col col-6">
                             <button class="btn buy-btn">Buy</button>
                           </div>
                         </div>
@@ -208,7 +212,7 @@
                 </div>
               </div>
   
-              <div class="row justify-content-center">
+              <div id="productMainView" class="row justify-content-center">
                 <div class="col-10"
                   style="background-color: rgb(255, 51, 0); color: white; border-radius: 25px; padding: 1.5%;">
                   <div class="row">
@@ -218,8 +222,10 @@
                     <div class="ml-5 col-6 mt-3">
                       <h4 style="font-weight: bolder;">Ondago Wheyfer coffee<br>Flavor Protein Bar</h4>
                       <div class="product-action-btns row mt-4">
-                        <div class="col-8">
-                          <button class="btn view-btn">View</button>
+                        <div class="col-5" style="padding-right: 1.5%;">
+                          <button class="btn view-btn" onclick="window.location.href='../widget.html#betterMatches'">Better Matches</button>
+                        </div>
+                        <div class="col-5" style="padding-left: 1.5%;">
                           <button class="btn buy-btn">Buy</button>
                         </div>
                       </div>
@@ -236,27 +242,39 @@
   
               <div class="row justify-content-center mt-5">
                 <div class="btn-group mx-auto" role="group">
-                  <button type="button" class="ingredient-analysis-btn btn" onclick="ingredientFuncion()">Ingredient Analysis</button>
                   <button type="button" class="quick-facts-btn btn" onclick="quickfactFuncion()">Quick Facts</button>
+                  <button type="button" class="ingredient-analysis-btn btn" onclick="ingredientFuncion()">Ingredient Analysis</button>
                 </div>
               </div>
   
               <div class="ingredient-analysis d-none">
                 <div class="row mt-5 text-center">
                   <div class="col-4">
-                    <h2>2</h2>
                     <canvas id="chart1"></canvas>
-                    <h4>Allergens</h4>
+                    <h6 class="mt-3">Allergens(2)</h6>
                   </div>
                   <div class="col-4">
-                    <h2>8</h2>
                     <canvas id="chart2"></canvas>
-                    <h4>Concerns</h4>
+                    <h6 class="mt-3">Concerns(8)</h6>
                   </div>
                   <div class="col-4">
-                    <h2>5</h2>
                     <canvas id="chart3"></canvas>
-                    <h4>Additives</h4>
+                    <h6 class="mt-3">Additives(5)</h6>
+                  </div>
+                </div>
+
+                <div class="row mt-5 text-center">
+                  <div class="col-4">
+                    <canvas id="chart4"></canvas>
+                    <h6 class="mt-3">Allergens(2)</h6>
+                  </div>
+                  <div class="col-4">
+                    <canvas id="chart5"></canvas>
+                    <h6 class="mt-3">Concerns(8)</h6>
+                  </div>
+                  <div class="col-4">
+                    <canvas id="chart6"></canvas>
+                    <h6 class="mt-3">Additives(5)</h6>
                   </div>
                 </div>
               </div>
@@ -264,101 +282,108 @@
   
               <div class="quick-facts">
                 <div class="row justify-content-center mt-5" style="font-weight: bold;">
-                  <div class="col-3">
-                    <ul>
-                      <li style="color: green"><span style="color: white;">Whole Grains</span></li>
+                  <div class="col-2">
+                    <ul id="quick-facts-pos">
+                      <li><span style="color: white;">Whole Grains</span></li>
                     </ul>
                   </div>
-                  <div class="col-3">
-                    <ul>
-                      <li style="color: red"><span style="color: white;">Added Sodium</span></li>
-                      <li style="color: red"><span style="color: white;">Peservative</span></li>
-                      <li style="color: red"><span style="color: white;">Refined Oil</span></li>
+                  <div class="col-2">
+                    <ul id="quick-facts-neg">
+                      <li><span style="color: white;">Added Sodium</span></li>
+                      <li><span style="color: white;">Peservative</span></li>
+                      <li><span style="color: white;">Refined Oil</span></li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="row mt-4">
-                <div class="col-12 text-center">
-                  <h4 style="color: white;">BETTER MATCHES</h4>
-                </div>
-              </div>
-  
-              <div class="row justify-content-center mt-3 rounded" style="background-image: linear-gradient(90deg,#20172b, rgb(21, 15, 28), black); padding: 5%;">
-                <div class="col-3">
-                  <div class="card" style="background-color: #222c35; border-radius: 25px;">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5">
-                          <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
-                        </div>
-                        <div class="col-7 mt-2"  style="padding: 0%;">
-                          <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
-                        </div>
-                      </div>
-                      <div class="col-12 mt-2" style="padding: 0%;">
-                        <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
-                      </div>
-                      <div class="product-action-btns2 row mt-4 justify-content-center">
-                        <div class="col-12">
-                          <button class="btn view-btn" onclick="productViewFunction()">View</button>
-                          <button class="btn buy-btn">Buy</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-3">
-                  <div class="card" style="background-color: #222c35; border-radius: 25px;">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5">
-                          <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
-                        </div>
-                        <div class="col-7 mt-2"  style="padding: 0%;">
-                          <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
-                        </div>
-                      </div>
-                      <div class="col-12 mt-2" style="padding: 0%;">
-                        <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
-                      </div>
-                      <div class="product-action-btns2 row mt-4 justify-content-center">
-                        <div class="col-12">
-                          <button class="btn view-btn" onclick="productViewFunction()">View</button>
-                          <button class="btn buy-btn">Buy</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-3">
-                  <div class="card" style="background-color: #222c35; border-radius: 25px;">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5">
-                          <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
-                        </div>
-                        <div class="col-7 mt-2"  style="padding: 0%;">
-                          <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
-                        </div>
-                      </div>
-                      <div class="col-12 mt-2" style="padding: 0%;">
-                        <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
-                      </div>
-                      <div class="product-action-btns2 row mt-4 justify-content-center">
-                        <div class="col-12">
-                          <button class="btn view-btn" onclick="productViewFunction()">View</button>
-                          <button class="btn buy-btn">Buy</button>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
               
+              <div id="betterMatches" class="better-matches mt-3" style="background-image: linear-gradient(90deg,#20172b, rgb(21, 15, 28), black); padding: 5%;">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h4 style="color: white;">BETTER MATCHES</h4>
+                  </div>
+                </div>
+    
+                <div class="row justify-content-center mt-5">
+                  <div class="col-3">
+                    <div class="card" style="background-color: #222c35; border-radius: 25px;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
+                          </div>
+                          <div class="col-7 mt-2"  style="padding: 0%;">
+                            <img src="./Bigbasket/61.png" height="85%" width="85%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2" style="padding: 0%;">
+                          <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
+                        </div>
+                        <div class="product-action-btns2 row mt-4 justify-content-center">
+                          <div class="view-col col-6">
+                            <button class="btn view-btn" onclick="window.location.href='../widget.html#productMainView'">View</button>
+                          </div>
+                          <div class="buy-col col-6">
+                            <button class="btn buy-btn">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-3">
+                    <div class="card" style="background-color: #222c35; border-radius: 25px;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
+                          </div>
+                          <div class="col-7 mt-2"  style="padding: 0%;">
+                            <img src="./Bigbasket/61.png" height="85%" width="85%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2" style="padding: 0%;">
+                          <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
+                        </div>
+                        <div class="product-action-btns2 row mt-4 justify-content-center">
+                          <div class="view-col col-6">
+                            <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                          </div>
+                          <div class="buy-col col-6">
+                            <button class="btn buy-btn">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-3">
+                    <div class="card" style="background-color: #222c35; border-radius: 25px;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
+                          </div>
+                          <div class="col-7 mt-2"  style="padding: 0%;">
+                            <img src="./Bigbasket/61.png" height="85%" width="85%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2" style="padding: 0%;">
+                          <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
+                        </div>
+                        <div class="product-action-btns2 row mt-4 justify-content-center">
+                          <div class="view-col col-6">
+                            <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                          </div>
+                          <div class="buy-col col-6">
+                            <button class="btn buy-btn">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
   
               <div class="row mt-5">
                 <div class="col-1 offset-1">
@@ -405,13 +430,11 @@
             </div>
             <section class="section-1">
               <div class="row justify-content-center mb-4">
-                <div class="col-12">
-                  <div class="row justify-content-center">
-                    <div class="col-5 col-sm-4 col-md-3 mb-4">
-                      <div class="btn-group" role="group">
-                        <button type="button" onclick="categoryFunction()" class="categories-btn btn">Category</button>
-                        <button type="button" onclick="productFunction()" class="product-btn btn">Product</button>
-                      </div>
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="btn-group" role="group">
+                      <button type="button" onclick="categoryFunction()" class="categories-btn btn">Category</button>
+                      <button type="button" onclick="productFunction()" class="product-btn btn">Product</button>
                     </div>
                   </div>
                 </div>
@@ -455,7 +478,7 @@
   
               <div class="category-view d-none mt-3">
                 <div class="row justify-content-center" style="background-image: linear-gradient(90deg,#20172b, rgb(21, 15, 28), black); padding: 5%;">
-                  <div class="col-7 col-sm-5 col-md-4 col-lg-3 mt-3">
+                  <div class="col-6 col-lg-3 mt-3">
                     <div class="card" style="background-color: #222c35; border-radius: 25px;">
                       <div class="card-body">
                         <div class="row">
@@ -479,7 +502,7 @@
                     </div>
                   </div>
                   
-                  <div class="col-7 col-sm-5 col-md-4 col-lg-3 mt-3">
+                  <div class="col-6 col-lg-3 mt-3">
                     <div class="card" style="background-color: #222c35; border-radius: 25px;">
                       <div class="card-body">
                         <div class="row">
@@ -503,7 +526,79 @@
                     </div>
                   </div>
     
-                  <div class="col-7 col-sm-5 col-md-4 col-lg-3 mt-3">
+                  <div class="col-6 col-lg-3 mt-3">
+                    <div class="card" style="background-color: #222c35; border-radius: 25px;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
+                          </div>
+                          <div class="col-7 mt-2"  style="padding: 0%;">
+                            <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2" style="padding: 0%;">
+                          <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
+                        </div>
+                        <div class="product-action-btns2 row mt-4 justify-content-center">
+                          <div class="col-12">
+                            <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                            <button class="btn buy-btn">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 mt-3">
+                    <div class="card" style="background-color: #222c35; border-radius: 25px;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
+                          </div>
+                          <div class="col-7 mt-2"  style="padding: 0%;">
+                            <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2" style="padding: 0%;">
+                          <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
+                        </div>
+                        <div class="product-action-btns2 row mt-4 justify-content-center">
+                          <div class="col-12">
+                            <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                            <button class="btn buy-btn">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 mt-3">
+                    <div class="card" style="background-color: #222c35; border-radius: 25px;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="./Bigbasket/3.png" height="90%" width="90%" alt="">
+                          </div>
+                          <div class="col-7 mt-2"  style="padding: 0%;">
+                            <img src="./Bigbasket/61.png" height="90%" width="90%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2" style="padding: 0%;">
+                          <p style="color:white; font-size: medium; font-weight: bold;">Hyp - Lean Sugarfree Protein Bars</p>
+                        </div>
+                        <div class="product-action-btns2 row mt-4 justify-content-center">
+                          <div class="col-12">
+                            <button class="btn view-btn" onclick="productViewFunction()">View</button>
+                            <button class="btn buy-btn">Buy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 mt-3">
                     <div class="card" style="background-color: #222c35; border-radius: 25px;">
                       <div class="card-body">
                         <div class="row">
@@ -558,28 +653,31 @@
               
               <div class="row justify-content-center">
                 <div class="col-12 col-sm-9 col-md-8 orange-box">
+                  <div class="row justify-content-center mt-1">
+                    <div class="col-10 col-md-9 mt-3">
+                      <h4 style="font-weight: bolder;">Ondago Wheyfer coffee <br> Flavor Protein Bar</h4>
+                    </div>
+                  </div>
+
                   <div class="row justify-content-center mt-3">
-                    <div class="col-4" style="display: flex; align-items: center;">
+                    <div class="col-5" style="display: flex; align-items: center;">
                       <div class="row">
                         <div class="col-12 square">
                           <img src="./Bigbasket/Score-Without-BG.png" alt="">
                         </div>
                       </div>
                     </div>
-                    <div class="offset-1 col-4">
+                    <div class="col-4">
                       <img class="product-img" src="./Bigbasket/2.png" alt="Your Image">
                     </div>
                   </div>
 
-                  <div class="row justify-content-center mb-3"> 
-                    <div class="col-10 col-md-9 mt-3">
-                      <h5 style="font-weight: bolder;">Ondago Wheyfer coffee Flavor Protein Bar</h5>
-                      <div class="product-action-btns row mt-4">
-                        <div class="col-12">
-                          <button class="btn view-btn">View</button>
-                          <button class="btn buy-btn">Buy</button>
-                        </div>
-                      </div>
+                  <div class="product-action-btns row justify-content-center mb-2"> 
+                    <div class="col-5">
+                      <button class="btn view-btn">Better Matches</button>
+                    </div>
+                    <div class="col-5">
+                      <button class="btn buy-btn">Buy</button>
                     </div>
                   </div>
                 </div>
@@ -596,17 +694,17 @@
                 <div class="row mt-5 text-center justify-content-center">
                   <div class="col-6 col-md-5 col-lg-4">
                     <h2>2</h2>
-                    <canvas id="chart4"></canvas>
+                    <canvas id="chart8"></canvas>
                     <h4>Allergens</h4>
                   </div>
                   <div class="col-6 col-md-5 col-lg-4">
                     <h2>8</h2>
-                    <canvas id="chart5"></canvas>
+                    <canvas id="chart9"></canvas>
                     <h4>Concerns</h4>
                   </div>
                   <div class="col-6 col-md-5 col-lg-4">
                     <h2>5</h2>
-                    <canvas id="chart6"></canvas>
+                    <canvas id="chart10"></canvas>
                     <h4>Additives</h4>
                   </div>
                 </div>
@@ -753,7 +851,7 @@
     data: {
       datasets: [{
         label: 'food Items',
-        data: [40, 60],
+        data: [20, 80],
         backgroundColor: ["#9afcce", "#d5d5d5"],
         borderWidth: [0,0],
         padding:[0,0]
@@ -768,7 +866,7 @@
     data: {
       datasets: [{
         label: 'food Items',
-        data: [20, 80],
+        data: [80, 20],
         backgroundColor: ["#870000", "#d5d5d5"],
         borderWidth: [0,0],
         padding:[0,0]
@@ -797,7 +895,7 @@
       datasets: [{
         label: 'food Items',
         data: [40, 60],
-        backgroundColor: ["#9afcce", "#d5d5d5"],
+        backgroundColor: ["#F9EDA7", "#d5d5d5"],
         borderWidth: [0,0],
         padding:[0,0]
       }]
@@ -812,7 +910,7 @@
       datasets: [{
         label: 'food Items',
         data: [20, 80],
-        backgroundColor: ["#870000", "#d5d5d5"],
+        backgroundColor: ["#E8C0A6", "#d5d5d5"],
         borderWidth: [0,0],
         padding:[0,0]
       }]
@@ -834,6 +932,11 @@
   });
 </script>
 <script>
+  $(".categories-btn").css("background-color","#109a73");
+  $(".categories-btn").css("font-weight","500");
+  $(".quick-facts-btn").css("background-color","#109a73");
+  $(".quick-facts-btn").css("font-weight","500");
+
   function productFunction(){
     $(".product-btn").css("background-color","#109a73");
     $(".product-btn").css("font-weight","500");
