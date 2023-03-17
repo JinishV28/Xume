@@ -274,6 +274,10 @@ html, body, html * {
     .slide-4{
         position: relative;
     }
+
+    .slide-4 video{
+        margin-top: 7%;
+    }
     
     .slide-4-titletext{
         color: rgb(200, 200, 200);
@@ -293,6 +297,7 @@ html, body, html * {
         top: 20%;
         right: 11%;
         font-size: 35px;
+        text-align: right;
     }
     
     .slide-4-text{
@@ -427,6 +432,12 @@ html, body, html * {
     @keyframes rotate {
         to {
             transform: rotate(360deg);
+        }
+    }
+
+    @media (min-width: 1800px) {
+        .slide-4 video{
+            margin-top: 3%;
         }
     }
 }
