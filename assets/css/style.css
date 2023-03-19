@@ -34,7 +34,7 @@ html, body, html * {
     }
     
     .slide{
-        margin: 0 0 150px 0;
+        margin: 0 0 10% 0;
     }
     
     .right_line{
@@ -237,6 +237,13 @@ html, body, html * {
     
     .slide-3 {
         position: relative;
+        margin-bottom: 19%;
+    }
+
+    @media (min-width: 1600px) {
+        .slide-3{
+            margin-bottom: 10%;
+        }
     }
     
     .slide3-alltext{
@@ -269,16 +276,14 @@ html, body, html * {
         color: white;
         font-family: 'Montserrat',sans-serif;
         font-size: 16px;
+        padding-left: 5%;
     }
     
     .slide-4{
         position: relative;
+        margin-bottom: 5%;
     }
 
-    .slide-4 video{
-        margin-top: 7%;
-    }
-    
     .slide-4-titletext{
         color: rgb(200, 200, 200);
         font-size: 60px;
@@ -302,11 +307,16 @@ html, body, html * {
     
     .slide-4-text{
         color: white;
-        position: absolute;
-        top: 84%;
         font-family: 'Montserrat',sans-serif;
         font-size: 16px;
-        padding-left: 10%;
+        position: absolute;
+        top: 28%;
+        right: 11%;
+        text-align: left;
+    }
+
+    .slide-4 video{
+        margin-top: 8%;
     }
     
     .slide-6{
@@ -456,7 +466,7 @@ html, body, html * {
     }
 
     .slide-mb{
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .slide-1 video{
