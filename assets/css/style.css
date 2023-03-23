@@ -237,7 +237,7 @@ html, body, html * {
     
     .slide-3 {
         position: relative;
-        margin-bottom: 19%;
+        margin-bottom: 16%;
     }
 
     @media (min-width: 1600px) {
@@ -336,13 +336,13 @@ html, body, html * {
         height: 600px;
     }
     
-    .slide-6 .img-1, .img-2 {
-        height: 180px;
+    .slide-6 .img-1{
+       width: 48vw;;
     }
     
-    .slide-6 .img-3,.img-4,.img-5{
+    /* .slide-6 .img-3,.img-4,.img-5{
         height: 250px;
-    }
+    } */
     
     .slide-6 .comment-slider h2{
         color: #f2c21e;
@@ -641,23 +641,9 @@ html, body, html * {
         height: 65vw;
     }
 
-    .img-1{
-        height: 32vw;
-    }
-    
-    .img-2{
-        height: 29vw;
-    }
-    
-    .img-3{
-        height: 48vw;
-    }
-    
-    .img-4{
-        height: 40vw;
-    }
-    .img-5{
-        height: 42vw;
+    .slide-6-mb .img-1{
+        justify-self: center;
+        width: 95vw;
     }
     
     footer .container{
