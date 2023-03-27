@@ -7,7 +7,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>XUME</title>
    <link rel="shortcut icon" href="./assets/logo2.png">
-   <link rel="stylesheet" href="./assets/css/main.css">
    <!--Bootstrap-->
    <link
       href='https://fonts.googleapis.com/css?family=Montserrat:400,100,100italic,300,400italic,500,500italic,700,700italic,900italic,900'
@@ -55,8 +54,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
                   <li><a href="#slide1" class="nav-link">Download</a></li>
-                  <li><a href="#slide2" class="nav-link">About</a></li>
-                  <li><a href="#slide4" class="nav-link">Adapt Xume</a></li>
+                  <!-- <li><a href="#slide2" class="nav-link">About</a></li>
+                  <li><a href="#slide4" class="nav-link">Adapt Xume</a></li> -->
                   <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=wecare@xume.com" class="nav-link">Contact Us</a></li>
                </ul>
             </div>
@@ -460,8 +459,18 @@
          }
       }
 
-      // var url = new URL("https://xume.co/Xume-website/assets/css/main.css");
-      // url.searchParams.set('q',458);
+      var head = document.getElementsByTagName('HEAD')[0];
+ 
+      var link = document.createElement('link');
+
+      link.rel = 'stylesheet';
+
+      link.type = 'text/css';
+
+      link.href = './assets/css/main.css?q=' + Math.random();
+
+      // Append link element to HTML head
+      head.appendChild(link);
    });
 
    function topFunction() {
