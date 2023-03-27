@@ -21,6 +21,10 @@ html, body, html * {
     --red:#e24227;
 }
 
+footer a:hover{
+    color: white;
+}
+
 @media screen and (min-width: 1200px) {
     #desktop{
         display: block;
@@ -395,7 +399,6 @@ html, body, html * {
     .footer-text{
         color: white;
         font-size: small;
-        text-decoration: underline;
     }
     
     ::-webkit-scrollbar {
@@ -685,7 +688,6 @@ html, body, html * {
     .footer-text{
         color: white;
         font-size: 11px;
-        text-decoration: underline;
     }
 
     #myBtn {
