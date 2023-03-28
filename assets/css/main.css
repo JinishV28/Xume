@@ -21,6 +21,10 @@ html, body, html * {
     --red:#e24227;
 }
 
+.footer-text a{
+    color: white;
+}
+
 footer a:hover{
     color: white;
 }
